@@ -1,13 +1,13 @@
 function ArithGeo(arr) { 
   var pattern = -1;
-  var isArimethic = true;
+  var isAritmethic = true;
   var isGeometric = true;
   
   for (var j=0; j<1000; j++) {
     if (arr[0] + j === arr[1]) {
       for (var i=1; i<arr.length-1; i++) {
        if (arr[i] + j != arr[i+1]) {
-         isArimethic = false;
+         isAritmethic = false;
         }
       }
     }
@@ -21,7 +21,7 @@ function ArithGeo(arr) {
 	  }
   }
   
-  if (isArimethic) {
+  if (isAritmethic) {
     pattern = "Arithmetic";
   } else if (isGeometric) {
     pattern = "Geometric";
